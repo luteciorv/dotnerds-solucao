@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <!--Menu de navegação-->
+    <div class="row border-bottom p-2 align-items-center justify-content-center justify-content-md-between mb-4">
+        <div class="col-md-2">
+            <img src="images/logo.png" alt="Logo" style="width: 150px;"/>
+        </div>
+
+        <div class="col-md-8">
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="index.html" class="nav-link px-2 link-dark">Página Inical</a></li>
+            <li><a href="users.html" class="nav-link px-2 link-dark">Usuários</a></li>
+            <li><a href="materials.html" class="nav-link px-2 link-dark">Materiais</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">Estoque</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">Retirada e Develoção</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">Relatórios</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2 text-end">
+            <button type="button" disabled class="btn btn-secondary me-2">Acessar</button>
+            <button type="button" class="btn btn-outline-primary" onclick="window.location.href='register.html';">Registrar</button>
+        </div>
+      </div>
+
+    <!--Corpo-->
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <form>
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="loginName">Endereço de e-mail</label>
+                    <input type="email" id="loginName" class="form-control" placeholder="Digite o seu endereço de e-mail" />
+                </div>
+    
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="loginPassword">Senha</label>
+                    <input type="password" id="loginPassword" class="form-control" placeholder="Digite a sua senha" />
+                </div>
+    
+                <div class="row mb-4">
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <!-- Checkbox -->
+                        <div class="form-check mb-3 mb-md-0">
+                        <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
+                        <label class="form-check-label" for="loginCheck">Continuar conectado?</label>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 d-flex justify-content-center">
+                    <!-- Simple link -->
+                    <a href="#">Esqueceu a sua senha?</a>
+                </div>
+                        
+                <button type="submit" class="btn btn-outline-primary btn-block mb-4">Acessar</button>
+            </form>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+
+    <!--Rodapé-->
+    <footer class="row text-center text-lg-start" style="background-color: #0c7c8c;">
+        <div class="col-md">
+            <div class="container d-flex justify-content-center py-3"></div>
+    
+            <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2023 Copyright: Todos os direitos reservados à DotNerds
+            </div>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
